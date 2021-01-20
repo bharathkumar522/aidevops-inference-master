@@ -75,8 +75,7 @@ def toDB(image_path, result):
     read=config.get('flag','read_table')
     write=config.get('flag','write_table')
     # create a connection object
-    conn = pymysql.connect(host, user=user,port=port,
-                               passwd=password, db=dbname)
+    conn = pymysql.connect(host=host,user=user,port=port,passwd=password,db=dbname)
 
 
     # function to read records
@@ -202,7 +201,7 @@ def result(list_result, image_path):
 
 
 #BUCKET = 'sagemaker-aidevops'
-BUCKET = 'aidevops-inference-pipeline-bucket'
+BUCKET = 'cop-group10'
 prefix = 'working-storage/'
 #TEST_IMAGE_PATHS = getList(BUCKET,prefix )
 TEST_IMAGE_PATHS = ['working-storage/sample.jpg']
