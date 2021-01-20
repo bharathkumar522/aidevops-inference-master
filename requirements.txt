@@ -1,6 +1,6 @@
 sklearn
 tensorflow==1.12.0
-keras==2.2.0
+keras==2.2.4
 tensorflow-estimator==1.10.12
 tensorflow-serving-api==1.12.0
 numpy
@@ -17,4 +17,3 @@ matplotlib
 mysqlclient
 mysql
 pymysql
-
